@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh</title>
+
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw; /* Full width of the viewport */
+            height: 0vh; /* 50% of the viewport height */
+            border: none;
+            background-color: #4e5480;
+        }
+
+        .content {
+            box-sizing: border-box;
+            padding: 0;
+            flex: 1; /* Distribute remaining height equally among content divs */
+            min-height: 90vh;
+            background-color: #4e5480;
+        }
+
+        /* Add specific styling for each content section */
+        .currency-converter-content,
+        .gpa-calculator-content,
+        .date-converter-content,
+        .tic-tac-toe-content {
+            background-color: #f0f0f0; /* Example background color */
+            height: 100%; /* Take full height of parent container */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%; /* Make iframes take full height of the content div */
+            border: 20; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Content from Currency Converter -->
+        <div class="content currency-converter-content">
+            <!-- Provide content and form from currency.html here -->
+            <iframe src="https://dineshcd101.github.io/curency/"></iframe>
+        </div>
+
+        <!-- Content from GPA Calculator -->
+        <div class="content gpa-calculator-content">
+            <!-- Provide content and form from gpa.html here -->
+            <iframe src="https://dineshcd101.github.io/gpa/"></iframe>
+        </div>
+
+        <!-- Content from Date Converter -->
+        <div class="content date-converter-content">
+            <!-- Provide content and form from date.html here -->
+            <iframe src="https://dineshcd101.github.io/date/"></iframe>
+        </div>
+
+        <!-- Content from provided link -->
+        <div class="content">
+            <iframe src="https://dineshcd101.github.io/dinesh/"></iframe>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

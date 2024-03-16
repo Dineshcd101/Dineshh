@@ -1,0 +1,164 @@
+/* Common Styles for GPA Calculator, Date Converter, Currency Converter, Tic Tac Toe */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Adjust the width based on the number of pages */
+    height: 100vh; /* Adjust the height as needed */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.content {
+    flex: 1;
+    min-width: 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* GPA Calculator Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+#calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* ... (existing GPA Calculator styles) */
+
+/* Date Converter Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #0066cc;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    transition: background-color 0.5s;
+}
+
+/* ... (existing Date Converter styles) */
+
+/* Currency Converter Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #0066cc;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    transition: background-color 0.5s;
+}
+
+/* ... (existing Currency Converter styles) */
+
+/* Tic Tac Toe Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+/* ... (existing Tic Tac Toe styles) */
+
+/* Popup Styles (common for Date Converter, Currency Converter, Tic Tac Toe) */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #4e5480;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.popup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+/* Error Popup Styles */
+#errorPopup .popup-content {
+    background: #fff; /* Customize as needed */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
